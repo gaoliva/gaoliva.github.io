@@ -113,6 +113,20 @@ section .current {
 section.forecast {
     display: none;
 }
+
+.current p {
+    vertical-align:top;
+    display:inline-block;
+    margin-right:30px;
+}
+.current img {
+    border-radius:50%;
+    display:inline-block;
+}
+.highlow p {
+    display:inline-block;
+    padding:10px;
+}
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
@@ -138,16 +152,4 @@ footer > p {
 /* Other Class Selectors */
 
 
-.current p {
-    vertical-align:top;
-    display:inline-block;
-    margin-right:30px;
-}
-.current img {
-    border-radius:50%;
-    display:inline-block;
-}
-.highlow p {
-    display:inline-block;
-    padding:10px;
-}
+
