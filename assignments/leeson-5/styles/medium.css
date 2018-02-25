@@ -1,0 +1,167 @@
+@media only screen and (min-width: 37.5em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    /* hamburger button does not need to be shown */
+    nav button {
+        display: none;
+    }
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
+    header {
+        text-align:left;
+        max-height: inherit
+    }
+    header h1 {
+        margin-left:10%;
+        font-size:20px;
+    }
+    header .subheading {
+        text-align:left;
+        margin-left:25%;
+        font-size:15px;
+    }
+    header img {
+        width:100%;
+        height:300px;
+        float:left;
+        align-content: center;
+    }
+
+    section.forecast {
+        background-color:#599ecf;
+        margin-top:5px;
+        min-width: 100%;
+        display: inline-block;
+    }
+    section.forecast h3 {
+        background-color:#599ecf;
+        margin:0;
+        color: white;
+        padding:15px;
+        border: solid black 1px;
+    }
+    section.forecast table {
+        border-collapse:collapse;
+        background-color:#9ac4e3;
+        min-width: 100%;
+        border: solid black 1px;
+    }
+    section.forecast table th, td {
+        padding:10px;
+        background-color:#bad8ed;
+        min-width: 100%;
+        border: solid black 1px;
+    }
+    article p.town-article img {
+        width: 62.666%;
+        float:right;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #79b1d9;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li.active a {
+        background-color: #599ecf;
+        font-weight: 500;
+
+    }
+
+    nav ul li a:hover {
+        background-color: #bad8ed;
+        color: black;
+    }
+
+
+    header img {
+        width: 6%;
+        height: 6%;
+        float: left;
+
+    }
+
+    section .highlow {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items:right;
+        align-items: right;
+        -webkit-justify-content: right;
+        justify-content: right;
+    }
+
+    section .current {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: right;
+        align-items: right;
+        -webkit-justify-content: right;
+        justify-content: right;
+    }
+
+    /* show the 10-day forecast with the medium view and up */
+    section.forecast {
+        display:inline-block;
+    }
+
+    /* responsive images */
+    article p.town-article img {
+        width: 62.666%;
+        float: right;
+    }
+
+    main figure {
+        margin: 0 0 .2rem 2%;
+        width: 50%;
+    }
+
+    main figure img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+
+    }
+    section .current {
+        margin-left:5%;
+        float:left;
+        height:90px;
+        width:90px;
+    }
+    .current p {
+        vertical-align:top;
+        display:inline-block;
+        margin-right:30px;
+    }
+    .current img {
+        border-radius:50%;
+        display:inline-block;
+    }
+    .highlow p {
+        display:inline-block;
+        padding:10px;
+    }
+
+}
