@@ -5,6 +5,7 @@
         display: none;
     }
 
+    /* Multi-section*/
     header,
     nav,
     main,
@@ -12,8 +13,10 @@
         max-width: 100%;
         text-align: center;
         align-content: center;
+        font-family: Calibri, sans-serif;
     }
 
+    /* Header section */
     header {
         background-color: #696969;
         max-height: 150px;
@@ -44,8 +47,7 @@
         align-content: center;
     }
 
-
-
+    /* Navigation Section*/
     nav ul {
         list-style-type: none;
         margin: 0;
@@ -77,9 +79,10 @@
         color: black;
     }
 
+    /* 10 Day Forecast section*/
     section.forecast {
         background-color:#599ecf;
-        margin-top:5px;
+        margin-top: 10px;
         min-width: 100%;
         display: inline-block;
     }
@@ -102,72 +105,98 @@
         min-width: 100%;
         border: solid black 1px;
     }
+
+    /* City Article*/
     article p.town-article img {
         width: 62.666%;
         float:right;
     }
 
+    article {
+        padding: 10px;
+        overflow: auto;
+    }
 
-    section .highlow {
-        display: -webkit-flex;
+    article p {
+        padding: 10px;
+        overflow: auto;
+    }
+
+    article img {
+        max-width: 50%;
+    }
+
+    .container {
+        margin-top: 10px;
         display: flex;
-        -webkit-align-items:right;
-        align-items: right;
-        -webkit-justify-content: right;
-        justify-content: right;
+        max-width: 100%;
     }
 
-    section .current {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-align-items: right;
-        align-items: right;
-        -webkit-justify-content: right;
-        justify-content: right;
+    main h2{
+        margin: 0;
     }
 
-    /* show the 10-day forecast with the medium view and up */
-    section.forecast {
-        display:inline-block;
-    }
-
-    /* responsive images */
-    article p.town-article img {
-        width: 62.666%;
-        float: right;
-    }
-
+    /* Main picture section*/
     main figure {
-        margin: 0 0 .2rem 2%;
+        margin: 0 10px;
         width: 50%;
+        height: 200px;
     }
 
     main figure img {
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
         height: 100%;
+    }
+
+    /* Weather info section*/
+    .displaymedium {
+        position:relative;
+        flex-direction: column-reverse;
+        display:flex;
+    }
+    .summary .current img {
+        margin-left: 5%;
+        float: left;
+        width: 70px;
+        height: 70px;
 
     }
-    section .current {
-        margin-left:5%;
-        float:left;
-        height:90px;
-        width:90px;
+
+    .summary .current p {
+        margin: 0;
     }
+
+    .summary {
+        width: 50%;
+        line-height: 80%;
+    }
+
+    .summary .highlow {
+        position: absolute;
+        top: 29px;
+        right: 38%;
+        line-height: 20%;
+        width: 95px;
+    }
+
     .current p {
-        vertical-align:top;
-        display:inline-block;
-        margin-right:30px;
+        position: absolute;
+        right: 44%;
+        font-weight: 600;
     }
-    .current img {
-        border-radius:50%;
-        display:inline-block;
+
+    .summary .highlow p {
+        margin: 0;
+        display: block;
     }
-    .highlow p {
-        display:inline-block;
-        padding:10px;
+
+
+    .summary .conditions {
+        margin: 0px;
+        line-height: 80%;
     }
+
+
+    /* Footer Section*/
     footer aside {
         margin: 0;
         padding: 1px;

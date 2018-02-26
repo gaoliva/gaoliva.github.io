@@ -8,8 +8,6 @@
 body {
     font-size: 16px;
     font-family: Calibri, sans-serif;
-
-    /* Declare the base font-family - from google font api or other */
 }
 
 header,
@@ -19,9 +17,7 @@ footer {
     max-width: 100%;
     text-align: center;
     align-content: center;
-
-    /* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    font-family: Calibri, sans-serif;
 }
 
 header {
@@ -119,12 +115,14 @@ section.forecast {
     vertical-align:top;
     display:inline-block;
     margin-right:30px;
+    font-weight: 600;
 }
 .current img {
     display:inline-block;
 }
 .highlow p {
     display:inline-block;
+    position: static;
     padding:10px;
 }
 article p.town-article img {
@@ -134,7 +132,9 @@ article p.town-article img {
     margin: auto;
 }
 
-footer {}
+footer {
+
+}
 
 footer aside {
     margin: 0;
