@@ -28,6 +28,7 @@ header {
     background-color: #696969;
     max-height: 60px;
     max-width:inherit;
+    clear: left;
 }
 
 header h1 {
@@ -136,7 +137,13 @@ article p.town-article img {
 footer {}
 
 footer aside {
-    line-height:100%;
+    margin: 0;
+    padding: 1px;
+    color: white;
+    background-color: #7e7e7e;
+    position: relative;
+    clear: both;
+
 }
 
 footer > p {
@@ -144,8 +151,10 @@ footer > p {
     padding: 8px;
     color: white;
     background-color: #696969;
-}
+    position: relative;
+    clear: both;
 
+}
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */

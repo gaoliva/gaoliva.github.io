@@ -2,6 +2,62 @@
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
     article p.town-article img {
         width: 29.333%;
+        float:right;
+    }
+
+    header {
+        background-color: #696969;
+        max-height: 140px;
+        max-width:inherit;
+        clear: left;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 8px;
+        color: white;
+        background-color: #696969;
+        text-align: left;
+        font-family: "Franklin Gothic Book - Bold", sans-serif;
+        font-size: 40px;
+    }
+
+    header .subheading {
+        text-align:left;
+        margin-left:25%;
+        font-size:18px;
+    }
+
+    header img {
+        width: 73px;
+        height: 73px;
+        float: left;
+        align-content: center;
+    }
+
+
+    footer aside {
+        margin: 0;
+        padding: 1px;
+        color: white;
+        background-color: #7e7e7e;
+        position: relative;
+        clear: both;
+
+    }
+
+    footer > p {
+        margin: 0;
+        padding: 8px;
+        color: white;
+        background-color: #696969;
+        position: relative;
+        clear: both;
+
     }
 
 }
+
+
+
