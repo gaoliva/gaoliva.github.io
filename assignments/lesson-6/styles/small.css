@@ -49,6 +49,7 @@ header img {
 header .subheading {
     color: white;
     margin-left: 25%;
+    padding: 0 0 2px 0;
 }
 
 /*nav {
@@ -57,10 +58,7 @@ header .subheading {
 
 /* Hamburger button */
 
-nav button {
-    /*position: fixed;
-    top: 2%;
-    right: 3%;*/
+.hamburgerB {
     display: block;
     position: absolute;
     top: .75rem;
@@ -72,7 +70,7 @@ nav button {
     color: white;
 }
 
-nav button:hover {
+.hamburgerB:hover {
     background-color: #585858;
     color: white;
 }
@@ -84,37 +82,24 @@ nav button:hover {
 
 /* Hamburger List - Toggled Off */
 
-.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #79b1d9;
-}
-
-.navigation li {
+nav ul.hide {
     display: none;
 }
 
 /* Hamburger List - Toggled On */
-.navigation.responsive {
-    position: relative;
+
+nav{
+    background-color: #79b1d9;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #79b1d9;
 }
 
-.navigation.responsive li {
-    background-color: #79b1d9;
-    display: block;
-    width: 100%;
-
-    border: 1px solid #ddd;
-}
-
-.navigation.responsive li a {
+nav ul li a {
     padding: 1rem;
     text-align: center;
     display: block;
@@ -122,16 +107,9 @@ nav button:hover {
     color: white;
 }
 
-.navigation.responsive li a:hover {
-    background-color: #ddd;
-}
-
-/*nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+nav ul li a:hover {
+    background-color: #bad8ed;
+    color: black;
 }
 
 nav ul li.active a {
@@ -140,24 +118,19 @@ nav ul li.active a {
 
 }
 
-nav ul li a:hover {
-    background-color: #bad8ed;
-    color: black;
-}
-*/
-
 main {}
 
 main h2 {}
 
 main figure {
-    margin: 0 0 .2rem 2%;
+    /*margin: 0 0 .2rem 2%;*/
+    margin: 10px 10px 10px 10px;
     width: 96%;
 }
 
 main figure img {
-    object-fit: cover;
-    object-position: center;
+    /*object-fit: cover;
+    object-position: center;*/
     width: 100%;
     height: 100px;
 

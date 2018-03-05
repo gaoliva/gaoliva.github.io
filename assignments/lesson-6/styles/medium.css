@@ -1,7 +1,7 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     /* hamburger button does not need to be shown */
-    nav button {
+    .hamburgerB {
         display: none;
     }
 
@@ -47,6 +47,8 @@
         align-content: center;
     }
 
+
+
     /* Navigation Section*/
     .navigation {
         list-style-type: none;
@@ -54,10 +56,12 @@
         padding: 0;
         overflow: hidden;
         background-color: #79b1d9;
+
     }
 
     .navigation li {
         float: left;
+        /*display: inline-block;*/
     }
 
     .navigation li a {
@@ -78,6 +82,9 @@
         background-color: #bad8ed;
         color: black;
     }
+
+    /**/
+
 
     /* 10 Day Forecast section*/
     section.forecast {
