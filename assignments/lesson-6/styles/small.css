@@ -58,7 +58,7 @@ header .subheading {
 
 /* Hamburger button */
 
-.hamburgerB {
+#hamburgerB {
     display: block;
     position: absolute;
     top: .75rem;
@@ -70,12 +70,12 @@ header .subheading {
     color: white;
 }
 
-.hamburgerB:hover {
+#hamburgerB:hover {
     background-color: #585858;
     color: white;
 }
 
-.hamburgerB.responsive {
+#hamburgerB.hide {
     background-color: black;
     color: white;
 }
