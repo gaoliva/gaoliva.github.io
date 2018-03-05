@@ -1,8 +1,6 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     /* hamburger button does not need to be shown */
-
-
     /* Multi-section*/
     header,
     nav,
@@ -18,7 +16,7 @@
     header {
         background-color: #696969;
         max-height: 150px;
-        max-width:inherit;
+        max-width: inherit;
         clear: left;
     }
 
@@ -34,9 +32,9 @@
     }
 
     header .subheading {
-        text-align:left;
-        margin-left:25%;
-        font-size:15px;
+        text-align: left;
+        margin-left: 25%;
+        font-size: 15px;
         padding: 0 0 3px 0;
     }
     header figure.logo {
@@ -45,7 +43,7 @@
         align-content: center;
     }
 
-    header figure.logo img{
+    header figure.logo img {
         max-width: 58px;
         max-height: 58px;
     }
@@ -64,7 +62,7 @@
     }
 
     nav ul li {
-        border:none;
+        border: none;
 
     }
 
@@ -102,33 +100,31 @@
         color: black;
     }
     */
-
     /**/
-
-
     /* 10 Day Forecast section*/
     section.forecast {
-        background-color:#599ecf;
+        background-color: #599ecf;
         margin-top: 10px;
         min-width: 100%;
         display: inline-block;
     }
     section.forecast h3 {
-        background-color:#599ecf;
-        margin:0;
+        background-color: #599ecf;
+        margin: 0;
         color: white;
-        padding:15px;
+        padding: 15px;
         border: solid black 1px;
     }
     section.forecast table {
-        border-collapse:collapse;
-        background-color:#9ac4e3;
+        border-collapse: collapse;
+        background-color: #9ac4e3;
         min-width: 100%;
         border: solid black 1px;
     }
-    section.forecast table th, td {
-        padding:10px;
-        background-color:#bad8ed;
+    section.forecast table th,
+    td {
+        padding: 10px;
+        background-color: #bad8ed;
         min-width: 100%;
         border: solid black 1px;
     }
@@ -136,7 +132,7 @@
     /* City Article*/
     article p.town-article img {
         width: 62.666%;
-        float:right;
+        float: right;
     }
 
     article {
@@ -159,7 +155,7 @@
         max-width: 100%;
     }
 
-    main h2{
+    main h2 {
         margin: 0;
     }
 
@@ -177,9 +173,9 @@
 
     /* Weather info section*/
     .displaymedium {
-        position:relative;
+        position: relative;
         flex-direction: column-reverse;
-        display:flex;
+        display: flex;
     }
     .summary .current img {
         margin-left: 5%;
@@ -245,9 +241,8 @@
 
     }
 
-    .clearfix:after {
+    /*.clearfix:after {
         content: "";
         display: table;
         clear: both;
-    }
-
+    }*/
