@@ -64,15 +64,19 @@ nav button {
     position: absolute;
     top: .75rem;
     right: 1.25rem;
-    background-color: black;
+    background-color: #7e7e7e;
     margin: 0;
     padding: 4px 8px 4px 8px;
     border: 0;
-    border-color: none;
     color: white;
 }
 nav button:hover {
-    background-color: darkgrey;
+    background-color: #585858;
+    color: white;
+}
+
+.hamburgerB.responsive {
+    background-color: black;
     color: white;
 }
 
