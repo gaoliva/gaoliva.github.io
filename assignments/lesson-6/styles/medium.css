@@ -39,11 +39,15 @@
         font-size:15px;
         padding: 0 0 3px 0;
     }
-   header img {
-        width: 58px;
-        height: 58px;
+    header figure.logo {
+        margin: 0;
         float: left;
         align-content: center;
+    }
+
+    header figure.logo img{
+        max-width: 58px;
+        max-height: 58px;
     }
 
     #hamburgerB {
@@ -240,4 +244,9 @@
 
     }
 
-}
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
