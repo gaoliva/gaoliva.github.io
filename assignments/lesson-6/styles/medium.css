@@ -48,7 +48,7 @@
     }
 
     /* Navigation Section*/
-    nav ul {
+    .navigation {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -56,11 +56,11 @@
         background-color: #79b1d9;
     }
 
-    nav ul li {
+    .navigation li {
         float: left;
     }
 
-    nav ul li a {
+    .navigation li a {
         display: block;
         color: white;
         text-align: center;
@@ -68,13 +68,13 @@
         text-decoration: none;
     }
 
-    nav ul li.active a {
+    .navigation li.active a {
         background-color: #599ecf;
         font-weight: 500;
 
     }
 
-    nav ul li a:hover {
+    .navigation li a:hover {
         background-color: #bad8ed;
         color: black;
     }

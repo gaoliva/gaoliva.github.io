@@ -5,6 +5,7 @@
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
+
 body {
     font-size: 16px;
     font-family: Calibri, sans-serif;
@@ -23,7 +24,7 @@ footer {
 header {
     background-color: #696969;
     max-height: 60px;
-    max-width:inherit;
+    max-width: inherit;
     clear: left;
 }
 
@@ -43,11 +44,10 @@ header img {
     height: 50px;
     float: left;
     align-content: center
-
 }
 
 header .subheading {
-    color:white;
+    color: white;
     margin-left: 25%;
 }
 
@@ -55,6 +55,7 @@ header .subheading {
     color: #599ecf;
 }*/
 
+/* Hamburger button */
 
 nav button {
     /*position: fixed;
@@ -70,6 +71,7 @@ nav button {
     border: 0;
     color: white;
 }
+
 nav button:hover {
     background-color: #585858;
     color: white;
@@ -80,6 +82,8 @@ nav button:hover {
     color: white;
 }
 
+/* Hamburger List - Toggled Off */
+
 .navigation {
     list-style-type: none;
     margin: 0;
@@ -88,25 +92,38 @@ nav button:hover {
     background-color: #79b1d9;
 }
 
-/*
-nav ul {
+.navigation li {
+    display: none;
+}
+
+/* Hamburger List - Toggled On */
+.navigation.responsive {
+    position: relative;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #79b1d9;
 }
-*/
 
-.navigation li {
-    /*float: left;*/
-    display: none;
+.navigation.responsive li {
+    background-color: #79b1d9;
+    display: block;
+    width: 100%;
+
+    border: 1px solid #ddd;
 }
 
-.navigation.responsive { position: relative; }
-.navigation.responsive li { background-color: #eee;	display: block;	width: 100%; margin: 2px 0;	border: 1px solid #ddd; }
-.navigation.responsive li a {	padding: 1rem; text-align: center;	display: block; text-decoration:none; }
-.navigation.responsive li a:hover { background-color: #ddd; }
+.navigation.responsive li a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation.responsive li a:hover {
+    background-color: #ddd;
 }
 
 /*nav ul li a {
@@ -146,12 +163,10 @@ main figure img {
 
 }
 
-section {
-
-}
+section {}
 
 section .current {
-    font-size:16px;
+    font-size: 16px;
 }
 
 section.forecast {
@@ -159,19 +174,22 @@ section.forecast {
 }
 
 .current p {
-    vertical-align:top;
-    display:inline-block;
-    margin-right:30px;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 30px;
     font-weight: 600;
 }
+
 .current img {
-    display:inline-block;
+    display: inline-block;
 }
+
 .highlow p {
-    display:inline-block;
+    display: inline-block;
     position: static;
-    padding:10px;
+    padding: 10px;
 }
+
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
@@ -179,9 +197,7 @@ article p.town-article img {
     margin: auto;
 }
 
-footer {
-
-}
+footer {}
 
 footer aside {
     margin: 0;
@@ -202,9 +218,7 @@ footer > p {
     clear: both;
 
 }
+
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
-
-
-
