@@ -157,7 +157,6 @@
     .gridGallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: auto;
     }
     .gridGallery .gridGalleryChild img{
         width: 100%;
