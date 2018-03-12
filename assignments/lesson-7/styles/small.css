@@ -217,7 +217,6 @@ footer > p {
 }
 
 /* Other Class Selectors */
-
 .clearfix:after {
     content: "";
     display: table;
