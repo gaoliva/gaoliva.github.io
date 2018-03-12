@@ -164,8 +164,9 @@
         border-radius: 10px 40px;
     }
 
-    .gridGallery .gridGalleryChild img:hover{
-        box-shadow: 6px 6px 10px aqua;
+    .gridGallery .gridGalleryChild:hover{
+        box-shadow: 4px 4px 20px 4px aqua;
+        border-radius: 10px 40px;
     }
 
     /* Footer Section*/
