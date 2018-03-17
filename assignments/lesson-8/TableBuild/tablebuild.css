@@ -1,0 +1,47 @@
+table {
+    box-shadow: 10px 10px 12px #628ca6;
+}
+
+table, thead, tbody, th, tr, td, tfoot {
+    font-family:'Ubuntu', sans-serif;
+    border-collapse:collapse;
+    border: .5px solid #c6c4c4;
+    text-align:center;
+    padding:5px 8px 5px 8px;
+}
+
+thead {
+    font-weight: bold;
+    font-size:24px;
+    background-color:#7fb9c2;
+}
+
+tbody th {
+    color:white;
+    background-color:#628ca6;
+    font-weight: 600;
+}
+
+tbody tr {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.reachedGoal {
+    background-color:#628ca6;
+    color:#ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e7ffed;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e7f0ed;
+}
+
+tfoot {
+    font-size:11px;
+    background-color:#7fb9c2;
+}
+

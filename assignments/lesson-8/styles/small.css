@@ -1,0 +1,224 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 100%;
+    text-align: center;
+    align-content: center;
+    font-family: 'Barlow', Calibri, sans-serif;
+}
+
+header {
+    background-color: #696969;
+    max-height: 60px;
+    max-width: inherit;
+    clear: left;
+}
+
+header h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 8px;
+    color: white;
+    background-color: #696969;
+    text-align: left;
+    font-family: "Franklin Gothic Book - Bold", sans-serif;
+    font-size: 22px;
+}
+
+header figure.logo {
+    float: left;
+    align-content: center;
+    margin: 0;
+}
+
+header figure.logo img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+header .subheading {
+    color: white;
+    margin-left: 25%;
+    padding: 0 0 3px 0;
+}
+
+/*nav {
+    color: #599ecf;
+}*/
+
+/* Hamburger button */
+
+#hamburgerB {
+    display: block;
+    position: absolute;
+    top: .75rem;
+    right: .60rem;
+    background-color: #7e7e7e;
+    margin: 0;
+    padding: 4px 8px 4px 8px;
+    border: 0;
+    color: white;
+}
+
+#hamburgerB:hover {
+    background-color: #585858;
+    color: white;
+}
+
+#hamburgerB.hide {
+    background-color: black;
+    color: white;
+}
+
+/* Hamburger List - Toggled Off */
+
+.navContainer.hide {
+    display: none;
+}
+
+/* Hamburger List - Toggled On */
+
+.navContainer {
+    display: flex;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    flex-flow: column wrap;
+    background-color: #79b1d9;
+    align-items: stretch;
+}
+
+.navContainer .flexNavItem {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #79b1d9;
+
+}
+
+.navContainer .flexNavItem a {
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.navContainer .flexNavItem a:hover {
+    background-color: #bad8ed;
+    color: black;
+}
+
+.navContainer .flexNavItem.active a {
+    background-color: #599ecf;
+    font-weight: 500;
+
+}
+
+main {}
+
+main h2 {}
+
+main .primaryFig {
+    /*margin: 0 0 .2rem 2%;*/
+    margin: 0px 0 0 0;
+    width: 100%;
+}
+
+main .primaryFig .primaryImg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+section {}
+
+section .current {
+    font-size: 16px;
+}
+
+section.forecast {
+    display: none;
+}
+
+.current p {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.current img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.highlow p {
+    display: inline-block;
+    position: static;
+    padding: 10px;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: auto;
+}
+
+footer {}
+
+footer aside {
+    margin: 0;
+    padding: 1px;
+    color: white;
+    background-color: #7e7e7e;
+    position: relative;
+    clear: both;
+
+}
+
+footer > p {
+    margin: 0;
+    padding: 8px;
+    color: white;
+    background-color: #696969;
+    position: relative;
+    clear: both;
+
+}
+
+/* Grid images from the gallery site */
+.gridGallery{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridGallery .gridGalleryChild img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 40px;
+}
+
+/* Other Class Selectors */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
