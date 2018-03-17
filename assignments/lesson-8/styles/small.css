@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html, body{
+    height: 100%;
+}
 /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
@@ -128,9 +131,33 @@ header .subheading {
 
 }
 
-main {}
+/* For ThankYou subpage */
+.thankYouContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
 
-main h2 {}
+.thankYouMain {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.thankYouContainer .thankYouMain p {
+    font-weight: bolder;
+    font-family: "Franklin Gothic Book - Bold", sans-serif;
+    color: #696969;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 main .primaryFig {
     /*margin: 0 0 .2rem 2%;*/
@@ -182,7 +209,9 @@ article p.town-article img {
     margin: auto;
 }
 
-footer {}
+footer {
+
+}
 
 footer aside {
     margin: 0;
@@ -221,4 +250,77 @@ footer > p {
     content: "";
     display: table;
     clear: both;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+fieldset {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+    margin: 0;
+    min-width:  30vw;
+
+}
+
+fieldset label span{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    min-width: 50vw;
+    font-weight: bold;
+    }
+fieldset label input{
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+
+#stormRegions {
+    margin-top: 20px;
+}
+.userInDanger  {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.submit{
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    background: #599ecf;
+    color: white;
+}
+.submit:hover{
+    background: #79b1d9;
+    color: white;
+}
+.submit:active{
+    background: #696969;
+    color: white;
+}
+#ratingVal {
+    margin-top: -15px;
+}
+#formHeader{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.radioButtons{
+    margin: 5px 0 10px 0;
+}
+textarea {
+    width: 30vw;
+    height: 10vw;
 }
