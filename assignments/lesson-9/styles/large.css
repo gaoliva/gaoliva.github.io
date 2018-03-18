@@ -1,0 +1,251 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    /* Multi-section*/
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 100%;
+        text-align: center;
+        font-family: 'Barlow', Calibri, sans-serif;
+    }
+
+
+    /* Header Section*/
+    header {
+        background-color: #696969;
+        max-height: 140px;
+        max-width:inherit;
+        clear: left;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 8px;
+        color: white;
+        background-color: #696969;
+        text-align: left;
+        font-family: "Franklin Gothic Book - Bold", sans-serif;
+        font-size: 40px;
+    }
+
+    header .subheading {
+        text-align:left;
+        margin-left:25%;
+        font-size:18px;
+        padding: 0 0 5px 0;
+    }
+
+    header figure.logo {
+        margin: 0;
+        float: left;
+        align-content: center;
+    }
+
+    header figure.logo img{
+        max-width: 73px;
+        max-height: 73px;
+    }
+
+
+    /* City Article Section*/
+    article p {
+        font-size:16px;
+    }
+
+    article p.town-article img {
+        /*width: 29.333%;
+        float:right;*/
+        margin-left: 0;
+    }
+
+
+
+    /* Main picture section*/
+    .container {
+        width:100%;
+        margin-top:0;
+        display:inline-block;
+    }
+
+    main {
+        margin-top:0;
+    }
+
+    main .primaryFig {
+        width:100%;
+        position:static;
+        margin-bottom:40px;
+        margin-left: 0;
+    }
+
+    main .primaryFig .primaryImg {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position:100% 100%;
+    }
+
+    main section h2 {
+        font-size:28px;
+    }
+
+    /* Weather information*/
+    .summary {
+        margin:0;
+        min-width:100%;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .summary h2 {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .displaymedium {
+        position:relative;
+        flex-direction: row-reverse;
+    }
+
+    .displaylarge {
+        width:100%;
+        display:flex;
+        justify-content:center;
+        font-size:18px;
+    }
+
+    .summary .current {
+        position:relative;
+        top:-10px;
+        width:250px;
+    }
+
+    .summary .current img {
+        position:relative;
+        top:-10px;
+        left:-25%;
+    }
+
+    .summary .current p {
+        position:relative;
+        width:50px;
+        font-size:22px;
+        display:block;
+        top:40px;
+        left:150px;
+    }
+
+    .summary .highlow {
+        float:right;
+        position:static;
+        line-height:100%;
+        width:250px;
+    }
+
+    .summary .conditions {
+        position:relative;
+        top:-5px;
+        margin:0px;
+        line-height:100%;
+        width:250px;
+    }
+
+    /* Grid images from the gallery site */
+    .gridGallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .gridGallery .gridGalleryChild img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px 40px;
+    }
+
+    .gridGallery .gridGalleryChild:hover{
+        box-shadow: 4px 4px 20px 4px aqua;
+        border-radius: 10px 40px;
+    }
+
+    /* Footer Section*/
+    footer aside {
+        margin: 0;
+        padding: 1px;
+        color: white;
+        background-color: #7e7e7e;
+        position: relative;
+        clear: both;
+
+    }
+
+    footer > p {
+        margin: 0;
+        padding: 8px;
+        color: white;
+        background-color: #696969;
+        position: relative;
+        clear: both;
+
+    }
+
+
+    /* Grid images from the home site */
+    .gridHome {
+        display: grid;
+        grid-template-rows: repeat( 2, 1fr);
+    }
+
+
+    .gridHome .gridHomeChild1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 12px;
+
+    }
+
+    .gridHome .gridHomeChild1 p.titleP {
+        /*grid-column-start: 1;
+        grid-column-end: auto;*/
+
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .gridHome .gridHomeChild1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+
+    .gridCities {
+        display: grid;
+        grid-template-columns: repeat( 3, 1fr);
+    }
+    .gridHome .gridCities .gridCitiesChild p.titleP {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+
+    .gridHome .gridCities .gridCitiesChild img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px;
+        grid-column-start: 1;
+        margin-top: 10px;
+
+    }
+
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
