@@ -344,9 +344,7 @@ textarea {
     font-weight: 600;
     font-size: 20px;
 }
-/*.gridHome .gridHomeChild1 p.infoP {
-    grid-row-start: 2;
-}*/
+
 .gridHome .gridHomeChild1 img {
     width: 100%;
     height: auto;
@@ -354,3 +352,21 @@ textarea {
     grid-row-start: 2;
 }
 
+.gridCities {
+    display: grid;
+    grid-template-rows: repeat( 3, 1fr);
+}
+.gridHome .gridCities .gridCitiesChild p.titleP {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.gridHome .gridCities .gridCitiesChild img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px;
+    grid-column-start: 1;
+    margin-top: 10px;
+
+}
