@@ -173,11 +173,14 @@ main .primaryFig .primaryImg {
 
 }
 
-section {}
+section {
+
+}
 
 section .current {
     font-size: 16px;
 }
+
 
 section.forecast {
     display: none;

@@ -36,8 +36,8 @@
     <nav>
         <button id="hamburgerB" class="show" onclick="hamburger()">&#9776;</button>
         <ul id="navList" class="hide navContainer">
-            <li class="flexNavItem"><a href="#">Home</a></li>
-            <li class="active flexNavItem"><a href="#">Franklin</a></li>
+            <li class="active flexNavItem"><a href="#">Home</a></li>
+            <li class="flexNavItem"><a href="franklin.html">Franklin</a></li>
             <li class="flexNavItem"><a href="#">Greenville</a></li>
             <li class="flexNavItem"><a href="#">Springfield</a></li>
             <li class="flexNavItem"><a href="stormcenter.html">Storm Center</a></li>
@@ -77,7 +77,64 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <!-- <script src="scripts/windchill.js"></script> -->
-    <script src="scripts/wu-weather.js"></script>
+    <script>
+        var section = document.querySelector('.gridCities');
+        var requestURL = '//byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function() {
+            var cityData = request.response;
+            showData(cityData);
+        }
+
+        function showData(jsonObj) {
+            var towns = jsonObj['towns'];
+
+            for (var i = 0; i < towns.length; i++) {
+                if (i === 2) { continue; }
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+
+                var myImage = document.createElement('IMG');
+                if (towns[i].name === "Franklin"){
+                    myImage.setAttribute("src", "/assignments/lesson-9/images/franklin-cropped_L9.jpeg");
+                    myImage.setAttribute("alt", towns[i].name);
+                }
+                else if (towns[i].name === "Greenville"){
+                    myImage.setAttribute("src", "/assignments/lesson-9/images/greenville_original_L9_v2.jpeg");
+                    myImage.setAttribute("alt", towns[i].name);
+                }
+                else if (towns[i].name === "Springfield"){
+                    myImage.setAttribute("src", "/assignments/lesson-9/images/springfield_original_L9_v2.jpeg");
+                    myImage.setAttribute("alt", towns[i].name);
+                }
+
+
+                myH2.textContent = towns[i].name;
+                myPara1.textContent = towns[i].motto;
+                myPara2.textContent = "Founded: " + towns[i].yearFounded;
+                myPara3.textContent = "Population: " + towns[i].currentPopulation;
+                myPara4.textContent = "Average Rainfall: " + towns[i].averageRainfall;
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myPara4);
+                myArticle.appendChild(myImage);
+
+
+                section.appendChild(myArticle);
+
+            }
+        }
+    </script>
 
 </body>
 
