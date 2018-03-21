@@ -1,12 +1,7 @@
 // Get current HTML page name (To be used for final project)
 var path = window.location.pathname;
 var page = path.split("/").pop();
-console.log(page);
 
-/****************************************
- * Query data from the weather conditions
- * page
- ****************************************/
 //Initialize API request
 var weatherConditions = new XMLHttpRequest();
 weatherConditions.open('GET', '//api.wunderground.com/api/77a2ddee5edb1323/conditions/q/MN/Franklin.json', true);
@@ -15,7 +10,6 @@ weatherConditions.send();
 // Get and display API data
 weatherConditions.onload = function () {
     var conditionsInfo = JSON.parse(weatherConditions.responseText);
-    console.log(conditionsInfo);
 
     // Current weather condition e.g Overcast
     document.getElementById('weather_cond').innerHTML = conditionsInfo.current_observation.weather;
@@ -29,10 +23,7 @@ weatherConditions.onload = function () {
     document.getElementById('weather_icon').src = conditionsInfo.current_observation.icon_url;
 }
 
-/****************************************
- * Query data from the weather forecast
- * page
- ****************************************/
+
 var weatherForecast = new XMLHttpRequest();
 weatherForecast.open('GET', '//api.wunderground.com/api/77a2ddee5edb1323/forecast/q/MN/Franklin.json', true);
 weatherForecast.send();
@@ -40,7 +31,6 @@ weatherForecast.send();
 // Get and display API data
 weatherForecast.onload = function () {
     var forecastInfo = JSON.parse(weatherForecast.responseText);
-    console.log(forecastInfo);
 
     // High temp
     document.getElementById('highTemp_display').innerHTML = forecastInfo.forecast.simpleforecast.forecastday["0"].high.fahrenheit + "&deg;F";
