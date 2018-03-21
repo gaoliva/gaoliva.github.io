@@ -48,9 +48,7 @@
     <main>
         <div class="container">
             <figure class="primaryFig">
-                <img class="primaryImg" src="images/bora-bora-french-polynesia-sunset-ocean.jpg" alt="Franklin field"
-                     sizes="100vw"
-                     srcset="images/franklin-cropped_10_small.jpg 600w,
+                <img class="primaryImg" src="images/bora-bora-french-polynesia-sunset-ocean.jpg" alt="Franklin field" sizes="100vw" srcset="images/franklin-cropped_10_small.jpg 600w,
                      images/franklin-cropped_19_medium.jpg 1024w,
                      images/franklin-cropped_27_large.jpg 1920w">
             </figure>
@@ -61,25 +59,25 @@
                     <div class="displaymedium">
                         <div class="highlow">
 
-                            <p>High: <input id="highTemp" type="hidden" value="50">50</p>
-                            <p>Low: <input id="lowTemp" type="hidden" value="30">30</p>
+                            <p>High: <input id="highTemp" type="hidden" value="0"><span id='highTemp_display'>N/A</span></p>
+                            <p>Low: <input id="lowTemp" type="hidden" value="0"><span id='lowTemp_display'>N/A</span></p>
                         </div>
                         <div class="current">
 
-                            <p class="currentCol"><span id="weather_current"></span> &nbsp; &nbsp;<br> <span id="weatherCon"></span></p>
+                            <p class="currentCol"><span id="weather_current">Temp N/A</span> &nbsp; &nbsp;<br> <span id="weather_cond">Condition N/A</span></p>
 
                             <picture>
                                 <img src="images/placeholder.png" alt="current weather" id="weather_icon">
 
                             </picture>
-                            <!-- <p><span id="weather_current"></span> &deg;F</p> -->
+
                         </div>
                     </div>
                     <div class="conditions">
-                        <!-- <h3><p>Current: <span id="weather_current"></span> &deg;F</p></h3> -->
-                        <p>Precipitation: <span id="weather_prec"></span>%</p>
-                        <p>Wind Speed: <input id="windSpeed" type="hidden" value="5">5 mpg SW</p>
-                        <p><span id="windchill">Windchill Placeholder</span></p>
+                        <p>Precipitation: <span id="weather_prec">N/A</span></p>
+                        <p>Wind Speed: <input id="windSpeed" type="hidden" value="0"><span id='windSpeed_display'>Speed N/A</span></p>
+                        <p><span id="windchill">Windchill N/A</span></p>
+                        <p>Forecast: <span id="weather_forecast">N/A</span></p>
 
                     </div>
                 </div>
@@ -122,11 +120,8 @@
         <article>
             <h3>Franklin Breaks Record</h3>
             <p class="town-article">
-                    <img src="images/cityHall_FranklinIdaho.jpeg" alt="Franklin old city hall"
-                         sizes="50vw"
-                         srcset="images/cityHall_FranklinIdaho_6.jpeg 600w,
-                                 images/cityHall_FranklinIdaho_10.jpeg 2736w">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu interdum justo, sed lacinia risus. Quisque non felis nec ipsum hendrerit facilisis. Maecenas fermentum ex et lacus faucibus, vitae vulputate est euismod. Fusce hendrerit luctus est eget lacinia. Vivamus faucibus varius leo vitae viverra. Cras tincidunt bibendum nibh, id interdum tortor maximus eu. Suspendisse gravida sed magna ac commodo. Quisque vitae lobortis nisi. Vestibulum id metus est. Nam nec venenatis massa, sit amet pulvinar lorem. Mauris dignissim est in bibendum congue. Duis nec cursus ex, id lacinia lorem. Duis ac dapibus odio. Praesent varius in quam et eleifend.
+                <img src="images/cityHall_FranklinIdaho.jpeg" alt="Franklin old city hall" sizes="50vw" srcset="images/cityHall_FranklinIdaho_6.jpeg 600w,
+                                 images/cityHall_FranklinIdaho_10.jpeg 2736w"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu interdum justo, sed lacinia risus. Quisque non felis nec ipsum hendrerit facilisis. Maecenas fermentum ex et lacus faucibus, vitae vulputate est euismod. Fusce hendrerit luctus est eget lacinia. Vivamus faucibus varius leo vitae viverra. Cras tincidunt bibendum nibh, id interdum tortor maximus eu. Suspendisse gravida sed magna ac commodo. Quisque vitae lobortis nisi. Vestibulum id metus est. Nam nec venenatis massa, sit amet pulvinar lorem. Mauris dignissim est in bibendum congue. Duis nec cursus ex, id lacinia lorem. Duis ac dapibus odio. Praesent varius in quam et eleifend.
             </p>
         </article>
 
@@ -134,20 +129,17 @@
 
     <footer>
         <aside>
-            <p>The Weather Track<br>
-                1 Infinite Rd<br>
-                Franklin, ID 83237<br>
-                (800) 456-3214<br>
-            info@theweathertrack.com</p>
+            <p>The Weather Track<br> 1 Infinite Rd<br> Franklin, ID 83237<br> (800) 456-3214<br> info@theweathertrack.com
+            </p>
 
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | The Weather Track | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
 
-   <script src="scripts/hamburger.js"></script>
-   <script src="scripts/currentdate.js"></script>
-   <script src="scripts/windchill.js"></script>
-   <script src="scripts/wu-weather.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/wu-weather.js"></script>
 
 </body>
 
