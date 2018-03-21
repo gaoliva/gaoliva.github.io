@@ -30,7 +30,7 @@ weatherConditions.onload = function () {
         icon_path = icon_path.replace("http", "https")
     }
 
-    document.getElementById('weather_icon').src = conditionsInfo.current_observation.icon_url;
+    document.getElementById('weather_icon').src = icon_path;
 }
 
 
