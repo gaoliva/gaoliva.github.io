@@ -20,6 +20,16 @@ weatherConditions.onload = function () {
     // Wind speed
     document.getElementById('windSpeed_display').innerHTML = conditionsInfo.current_observation.wind_mph + " MPH" + " " + conditionsInfo.current_observation.wind_dir;
     // Display weather icon with current condition
+    var icon_path = conditionsInfo.current_observation.icon_url;
+    var urlString = document.location.href;
+    console.log(urlString);
+    var found = urlString.indexOf("https");
+    console.log(found);
+
+    if (found >= 0) {
+        icon_path = icon_path.replace("http", "https")
+    }
+
     document.getElementById('weather_icon').src = conditionsInfo.current_observation.icon_url;
 }
 
