@@ -208,8 +208,7 @@
 
     /* Grid images from the home site */
     .gridHome {
-        display: grid;
-        grid-template-columns: repeat(1fr, 1fr);
+        /*display: grid;*/
     }
 
 
@@ -234,7 +233,7 @@
 
     .gridHome .gridHomeChild1 img {
         width: 100%;
-        max-height: auto;
+        height: auto;
         border-radius: 10px 10px;
         margin: 5px;
     }
