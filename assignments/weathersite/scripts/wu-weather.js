@@ -81,6 +81,13 @@ weatherForecast.onload = function () {
 }
 
 
+/************************************************************
+*************************************************************
+*** DISABLED DUE TO API USAGE RESTRICTIONS*******************
+*************************************************************
+*************************************************************
+
+
 var weatherForecast10Day = new XMLHttpRequest();
 // Determine city page
 var forecast10DayAPIURL;
@@ -134,6 +141,6 @@ weatherForecast10Day.onload = function () {
     //Day 10
     document.getElementById('forecast_day10').innerHTML = forecas10DaytInfo.forecast.simpleforecast.forecastday["9"].date.weekday_short;
     document.getElementById('fore_temp_day10').innerHTML = forecas10DaytInfo.forecast.simpleforecast.forecastday["9"].high.fahrenheit +  "&deg;F";
-
-
 }
+
+*************************************************************/

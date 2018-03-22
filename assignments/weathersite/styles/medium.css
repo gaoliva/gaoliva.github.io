@@ -80,7 +80,7 @@
     /* 10 Day Forecast section*/
     section.forecast {
         background-color: #599ecf;
-        margin-top: 10px;
+        margin-top: 60px;
         min-width: 100%;
         display: inline-block;
     }
@@ -109,10 +109,12 @@
     article p.town-article img {
         width: 62.666%;
         float: right;
+        margin-left: 10px;
     }
     article {
         padding: 10px;
         overflow: auto;
+        margin-top: 50px;
     }
     article p {
         padding: 10px;
@@ -134,11 +136,12 @@
     main .primaryFig {
         margin: 0 10px;
         width: 50%;
-        height: 200px;
+        height: 250px;
     }
     main .primaryFig .primaryImg {
         height: 100%;
         width: 100%;
+        object-position: 100% 35%;
     }
     /* Weather info section*/
     .displaymedium {
@@ -146,6 +149,7 @@
         flex-direction: column-reverse;
         display: flex;
     }
+
     .summary .current img {
         margin-left: 5%;
         float: left;
