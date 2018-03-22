@@ -56,7 +56,7 @@
 
     <main>
 
-         <div class="gridHome">
+        <div class="gridHome">
             <figure class="gridHomeChild1">
                 <img src="/assignments/lesson-9/images/bora-bora-french-polynesia-sunset-ocean_L9.jpg" alt="WeatherStory">
                 <div class="weatherStory">
@@ -101,7 +101,9 @@
             var towns = jsonObj['towns'];
 
             for (var i = 0; i < towns.length; i++) {
-                if (i === 2) { continue; }
+                if (i === 2) {
+                    continue;
+                }
                 var myArticle = document.createElement('article');
                 var myH2 = document.createElement('h2');
                 var myPara1 = document.createElement('p');
@@ -110,15 +112,13 @@
                 var myPara4 = document.createElement('p');
 
                 var myImage = document.createElement('IMG');
-                if (towns[i].name === "Franklin"){
+                if (towns[i].name === "Franklin") {
                     myImage.setAttribute("src", "/assignments/lesson-9/images/franklin-cropped_L9.jpeg");
                     myImage.setAttribute("alt", towns[i].name);
-                }
-                else if (towns[i].name === "Greenville"){
+                } else if (towns[i].name === "Greenville") {
                     myImage.setAttribute("src", "/assignments/lesson-9/images/greenville_original_L9_v2.jpeg");
                     myImage.setAttribute("alt", towns[i].name);
-                }
-                else if (towns[i].name === "Springfield"){
+                } else if (towns[i].name === "Springfield") {
                     myImage.setAttribute("src", "/assignments/lesson-9/images/springfield_original_L9_v2.jpeg");
                     myImage.setAttribute("alt", towns[i].name);
                 }
@@ -142,6 +142,7 @@
 
             }
         }
+
     </script>
 
 </body>
