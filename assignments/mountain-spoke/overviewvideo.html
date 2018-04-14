@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Mountain Spoke | Bicycling Tours and Bicycles</title>
+    <meta name="author" content="Guillermo O. Student">
+    <meta name="description" content="Bicycling Tours, Events, and Hardware">
+    <!-- external style references in the proper cascading order -->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/small.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <figure class="logo">
+            <img src="images/bike_logo_small.png" alt="Site logo" srcset="images/bike_logo_small.png 1x,
+                 images/bike_logo_medium.png 2x,
+                 images/bike_logo_large.png 3x">
+        </figure>
+        <h1>The Mountain Spoke</h1>
+        <div class="subheading">Live your life to the extreme!</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button id="hamburgerB" class="show" onclick="hamburger()">&#9776;</button>
+        <ul id="navList" class="hide navContainer">
+            <li class="active flexNavItem"><a href="#">Home</a></li>
+            <li class="flexNavItem"><a href="adventures.html">Adventure Tours</a></li>
+            <li class="flexNavItem"><a href="events.html">Events</a></li>
+            <li class="flexNavItem"><a href="sales.html">Sales</a></li>
+            <li class="flexNavItem"><a href="services.html">Services</a></li>
+            <li class="flexNavItem"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Overview Video</h2>
+
+        <div id="overviewVideo">
+            <video controls>
+                <source src="/assignments/mountain-spoke/videos/TermProject_GuillermoOliva.mp4" type="video/mp4">
+
+            </video>
+        </div>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>The Mountain Spoke<br> 3950 Valley Commons Drive<br> Bozeman, MT 59718<br> (800) 456-3214<br> info@themountainspoke.com
+            </p>
+
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <a href="references.html">References</a> | <a href="#"> Video </a> | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+
+</body>
+
+</html>
