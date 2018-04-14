@@ -1,0 +1,357 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    /* Multi-section*/
+    header,
+    main {
+        max-width: 100%;
+        text-align: center;
+        font-family: 'Roboto', Calibri, sans-serif;
+
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Roboto', Calibri, sans-serif;
+    }
+
+    footer,
+    nav,
+    p {
+        max-width: 100%;
+        text-align: center;
+        font-family: 'Barlow', Calibri, sans-serif;
+    }
+
+    html,
+    body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body {}
+
+    /* Header Section*/
+    header {
+        background-color: #87C82E;
+        max-height: 200px;
+        max-width: inherit;
+        clear: left;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 8px;
+        color: white;
+        background-color: #87C82E;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        font-size: 50px;
+    }
+
+    header .subheading {
+        text-align: left;
+        margin-left: 25%;
+        font-size: 18px;
+        padding: 0 0 5px 0;
+    }
+
+    header figure.logo {
+        margin: 0;
+        float: left;
+        align-content: center;
+    }
+
+    header figure.logo img {
+        max-width: 90px;
+        max-height: 85px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    /* City Article Section*/
+    article p {
+        font-size: 16px;
+    }
+
+    article p.town-article img {
+        /*width: 29.333%;
+        float:right;*/
+        margin-left: 10px;
+    }
+
+    /* Current Section*/
+    section .current {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    section .current .currentCol {
+        width: 200px;
+
+    }
+
+    /* Main picture section*/
+    .container {
+        width: 100%;
+        margin-top: 0;
+        display: inline-block;
+    }
+
+    main {
+        margin-top: 0;
+        flex: 1;
+    }
+
+    main .primaryFig {
+        width: 100%;
+        position: static;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    main .primaryFig .primaryImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 100% 35%;
+    }
+
+    main section h2 {
+        font-size: 28px;
+    }
+
+    /* Weather information*/
+    .summary {
+        margin: 0;
+        min-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .summary h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .displaymedium {
+        position: relative;
+        flex-direction: row-reverse;
+    }
+
+    .displaylarge {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    /* Grid images from the home site */
+    .gridHome {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-column-gap: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .gridHome article {
+        border: 1px solid #87c82E;
+        border-radius: 10px 10px;
+        color: #565656;
+    }
+
+    .gridHome article:hover {
+        box-shadow: 4px 4px 20px 4px #55E994;
+        border-radius: 10px 10px;
+    }
+
+    .gridHome article img {
+        min-width: 100%;
+        max-height: 100%;
+        border-radius: 10px 10px;
+    }
+    .gridHome .gridHome1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .gridHome .gridHome2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+    .gridHome .gridHome3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .gridHome .gridHome4 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 50px;
+        margin-bottom: 15px;
+
+    }
+
+    /* Grid images from the adventures site */
+    .gridAdventure {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        grid-column-gap: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    .gridAdventure article {
+        border: 1px solid #87c82E;
+        border-radius: 10px 10px;
+        color: #565656;
+
+    }
+
+    .gridAdventure article:hover {
+        box-shadow: 4px 4px 20px 4px #55E994;
+        border-radius: 10px 10px;
+    }
+
+    .gridAdventure article img {
+        min-width: 40%;
+        max-height: 40%;
+        border-radius: 10px 10px;
+    }
+    .gridAdventure .gridHome1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+    .gridAdventure .gridHome2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    /* Grid images from the adventures site */
+    .gridSale {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-column-gap: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 5px;
+    }
+
+    .gridSale article {
+        border: 1px solid #87c82E;
+        border-radius: 10px 10px;
+        color: #565656;
+
+    }
+
+    .gridSale article:hover {
+        box-shadow: 4px 4px 20px 4px #55E994;
+        border-radius: 10px 10px;
+    }
+
+    .gridSale article img {
+        min-width: 40%;
+        max-height: 40%;
+        border-radius: 10px 10px;
+    }
+    .gridSale .gridSale1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+    .gridSale .gridSale2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    .gridSale .gridSale3 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+    }
+
+    /* Footer Section*/
+    footer {}
+    footer aside {
+        margin: 0;
+        padding: 1px;
+        color: white;
+        background-color: #AEDF6C;
+        font-size: 20px;
+        color: black;
+        position: relative;
+        clear: both;
+
+    }
+
+    footer > p {
+        margin: 0;
+        padding: 8px;
+        color: white;
+        background-color: #9BD74A;
+        color: black;
+        font-size: 20px;
+        position: relative;
+        clear: both;
+    }
+
+    :any-link {
+        text-decoration: none;
+    }
+
+    .eventDescription{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .eventDescription p{
+        margin-bottom: 50px;
+        margin-bottom: 30px;
+    }
+
+    iframe{
+        width:45%;
+        height: 370px;
+    }
+    table {
+        box-shadow: 10px 10px 12px #628ca6;
+        width: 50%;
+        min-height: 80%;
+        margin: 1% 25% 1% 25%;
+    }
+
+}

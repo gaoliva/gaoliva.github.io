@@ -1,0 +1,29 @@
+{
+    "prices" : [
+        {
+            "service": "Tire Replacement",
+            "price": "$14",
+            "completionTime": "30 mins"
+        },
+        {
+            "service": "Handle Adjustment",
+            "price": "$20",
+            "completionTime": "15 mins"
+        },
+        {
+            "service": "Brake Tune-up",
+            "price": "$16",
+            "completionTime": "20 mins"
+        },
+        {
+            "service": "Gear greasing",
+            "price": "$21",
+            "completionTime": "40 mins"
+        },
+        {
+            "service": "Chain Tensioning",
+            "price": "$23",
+            "completionTime": "10 mins"
+        }
+    ]
+}
