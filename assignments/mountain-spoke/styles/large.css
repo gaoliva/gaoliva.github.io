@@ -346,6 +346,7 @@
     iframe{
         width:45%;
         height: 370px;
+        border:0;
     }
     table {
         box-shadow: 10px 10px 12px #628ca6;
