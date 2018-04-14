@@ -329,7 +329,7 @@
         clear: both;
     }
 
-    :any-link {
+    a {
         text-decoration: none;
     }
 
